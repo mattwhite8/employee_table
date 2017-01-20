@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Table</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="jumbotron">
+				<h1 class="text-center">Employee Time Table</h1>
+				<p class="text-center">A Comprehensive Directory of Employee Billable Hours</p>
+			</div><!-- jumbotron -->
+		</div><!-- row -->
+		<div class="row">
+
+			<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Current Employees</h3>
+			  </div>
+			  <div class="panel-body">
+			  	<table id="train-table" class="table table-default">
+			  		<thead>
+				  		<tr>
+				  			<th>Employee Name</th>
+				  			<th>Rate</th>
+				  			<th>Start Date</th>
+				  			<th>Months Worked</th>
+				  			<th>Monthly Rate ($)</th>
+				  		</tr>
+			  		</thead>
+			  		<tbody id="table-body">
+			  			
+			  		</tbody>
+			  	</table>			  	
+			  </div>
+			</div><!-- panel panel-primary -->
+
+			<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Add Employees</h3>
+			  </div>
+			  <div class="panel-body">
+				<form>
+				  <div class="form-group">
+				    <label for="employee-name">Employee Name</label>
+				    <input type="input" class="form-control" id="employee-name" placeholder="John Doe">
+				  </div>
+				  <div class="form-group">
+				    <label for="role">Role</label>
+				    <input type="input" class="form-control" id="role" placeholder="Clerk">
+				  </div>
+				  <div class="form-group">
+				    <label for="date">Start Date</label>
+				    <input type="input" class="form-control" id="date">
+				  </div>
+				  <div class="form-group">
+				    <label for="rate">Monthly Rate</label>
+				    <input type="input" class="form-control" id="rate">
+				  </div>
+				  <button type="submit" id="employee-submit" class="btn btn-primary">Submit</button>
+				</form>			  
+			  </div>
+			</div><!-- panel panel-primary -->
+
+		</div><!-- row -->
+	</div><!-- container -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>
